@@ -1,0 +1,14 @@
+//this was made in codewars
+//I am posting the final solution here
+function alphabetPosition(text) {
+  var letter_text="";
+  var letter=0;                 
+  //for each letter in text
+  for (var i =0; i<text.length; i++)
+  {    
+       letter=text.toLowerCase().charCodeAt(i) - 96;
+       if (letter>0&&letter<=36&&text.charAt(i).toLowerCase().match(/[a-z]/i))
+          letter_text=letter_text+letter+" "; 
+   }
+   return letter_text.trim();
+}
